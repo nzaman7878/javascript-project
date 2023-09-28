@@ -1,0 +1,99 @@
+/* Reset default styles */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Set the background color with a linear gradient */
+body {
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Create a container with some padding */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the calculator */
+.calculator {
+    width: 100%;
+    max-width: 600px;
+    margin: 10% auto;
+    text-align: center;
+}
+
+/* Style the calculator header */
+.calculator h1 {
+    font-size: 3rem;
+}
+
+/* Style the span inside the header */
+.calculator h1 span {
+    color: #ffff76;
+}
+
+/* Style the input box */
+.input-box {
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the input field */
+.input-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Style the button */
+.input-box button {
+    background: #ffff76;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for the button */
+.input-box button:hover {
+    background: #ffdb58;
+}
+
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .calculator {
+        margin: 10% 5%;
+    }
+}
+
+#result{
+    font-size: 20px;
+
+}
+
+#result span{
+    color: #ffff76;
+}
