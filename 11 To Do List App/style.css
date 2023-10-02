@@ -1,0 +1,140 @@
+/* Global reset for margins, padding, font-family, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Main container with a gradient background */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1b334b, #4d2250);
+    padding: 10px;
+}
+
+/* Todo application container */
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff; /* White background */
+    margin: 40px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+/* Todo application heading */
+.todo-app h2 {
+    color: #1b334b; /* Dark blue text color */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Icon next to the heading */
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Styling for each todo item row */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f2f2f2; /* Light gray background */
+    border-radius: 30px;
+    padding: 20px; /* Increased padding */
+    margin-bottom: 20px; /* Reduced margin */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Todo input field */
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 400; /* Normal font weight */
+    border-bottom: 2px solid #ccc; /* Bottom border for input */
+}
+
+/* Todo item delete button */
+button {
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    background: #e74c3c; /* Red background color */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px; /* Rounded button */
+    color: #fff; /* White text color */
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+/* Hover effect for the delete button */
+button:hover {
+    background: #c0392b; /* Darker red on hover */
+}
+
+/* Todo list items */
+ul li {
+    list-style: none;
+    font-size: 18px; /* Slightly larger font size */
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Checkbox icon before each todo item */
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the checkbox */
+    left: 20px; /* Increased left margin */
+}
+
+/* Styling for checked todo items */
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+/* Checkbox icon for checked items */
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+/* Delete button on todo items */
+ul li span {
+    position: absolute;
+    right: 10px; /* Adjusted right margin */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%);
+    width: 32px; /* Slightly smaller width */
+    height: 32px; /* Slightly smaller height */
+    font-size: 22px;
+    color: #555;
+    line-height: 32px; /* Vertically center the text */
+    text-align: center;
+    border-radius: 50%;
+    background: #f2f2f2; /* Light gray background */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+/* Hover effect for the delete button */
+ul li span:hover {
+    background: #d9d9d9; /* Lighter gray on hover */
+}
