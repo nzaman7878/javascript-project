@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Page title -->
+<title>Random Password Generator</title>
+
+<!-- Link to external CSS file -->
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Main container for the content -->
+    <div class="container">
+        <!-- Header with the title and a span -->
+        <h1>Generate a <br> <span>Random Password</span></h1>
+
+        <!-- Display area containing an input field and copy button -->
+        <div class="display">
+            <!-- Input field for displaying generated passwords -->
+            <input type="text" id="password" placeholder="password">
+
+            <!-- Copy button with an image, calls the copyPassword() function when clicked -->
+            <img src="./images/copy.svg" alt="" onclick="copyPassword()">
+        </div>
+
+        <!-- Button to generate a new password, calls the createPassword() function when clicked -->
+        <button onclick="createPassword()"><img src="./images/generate.png" alt="">Generate Password</button>
+    </div>
+
+    <!-- Include an external JavaScript file to provide functionality -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
