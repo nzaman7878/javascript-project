@@ -1,0 +1,107 @@
+/* Reset some default styles and set the global font family */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Apply background color to the entire body */
+body {
+    background: #f7edff;
+}
+
+/* Style for a container that holds buttons */
+.buttons {
+    margin: 50px;
+}
+
+/* Style for buttons within the container */
+.buttons button {
+    background: #333;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Style for a toast notification container */
+#toastBox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Style for individual toast notifications */
+.toast {
+    width: 400px;
+    height: 80px;
+    background: #fff;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0;
+    position: relative;
+    transform: translateX(100%);
+    animation: moveleft 0.5s linear forwards;
+}
+
+/* Keyframes animation for toast notifications */
+@keyframes moveleft {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Style for the icon within toast notifications */
+.toast i {
+    margin: 0 20px;
+    font-size: 35px;
+    color: green;
+}
+
+/* Style for error toast notifications */
+.toast.error i {
+    color: red;
+}
+
+/* Style for invalid toast notifications */
+.toast.invalid i {
+    color: orange;
+}
+
+/* Style for the animated progress bar at the bottom of toast notifications */
+.toast::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: green;
+    animation: anim 5s linear forwards;
+}
+
+/* Keyframes animation for the progress bar */
+@keyframes anim {
+    100% {
+        width: 0;
+    }
+}
+
+/* Style for error toast progress bar */
+.toast.error::after {
+    background: red;
+}
+
+/* Style for invalid toast progress bar */
+.toast.invalid::after {
+    background: orange;
+}
