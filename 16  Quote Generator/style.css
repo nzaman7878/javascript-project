@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f4f9; /* Light blue background */
+    font-family: Arial, sans-serif;
+}
+
+.quote-box {
+    background: #ffffff; /* White background */
+    width: 700px;
+    max-width: 90%; /* Make it responsive */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.quote-box h2 {
+    font-size: 32px;
+    margin-bottom: 20px; /* Reduce margin for a cleaner look */
+    color: #1a73e8; /* Blue color for the heading */
+}
+
+.quote-box h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: #1a73e8; /* Blue color for the line */
+    display: block;
+    margin: 20px auto; /* Center the line */
+}
+
+.quote-box blockquote {
+    font-size: 26px;
+    min-height: 110px;
+    line-height: 1.5; /* Improved line height for better readability */
+    padding: 20px; /* Add padding for better spacing */
+    color: #333; /* Dark gray text color */
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+    content: '"';
+    color: #1a73e8; /* Blue color for the quotation marks */
+}
+
+.quote-box span {
+    display: block;
+    margin-top: 20px;
+    float: right;
+    position: relative;
+}
+
+.quote-box span::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #1a73e8; /* Blue color for the marker */
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.quote-box div {
+    width: 100%;
+    margin-top: 30px; /* Increase top margin for better separation */
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box button {
+    background: #1a73e8; /* Blue background for buttons */
+    color: #fff;
+    border-radius: 25px;
+    border: none; /* Remove border for a cleaner look */
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold; /* Make text bold for better visibility */
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+.quote-box button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.quote-box button:nth-child(2) {
+    background: transparent;
+    color: #333;
+    border: 2px solid #333; /* Add a border to the second button */
+}
+
+/* Add a hover effect for buttons */
+.quote-box button:hover {
+    background: #0d5ea7; /* Darker blue background on hover */
+}
