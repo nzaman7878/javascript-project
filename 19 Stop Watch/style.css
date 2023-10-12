@@ -1,0 +1,47 @@
+/* Global styles for the body */
+body {
+    background: #edeaff; /* Background color */
+    font-family: 'Courier Prime', monospace; /* Primary font family */
+    font-family: 'Inter', sans-serif; /* Secondary font family */
+    font-family: 'Rubik', sans-serif; /* Tertiary font family */
+}
+
+/* Styles for the stopwatch container */
+.stopwatch {
+    width: 90%; /* Set width to 90% of the parent container */
+    max-width: 600px; /* Set a maximum width of 600px */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/background.jpg'); /* Background with gradient overlay and image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    text-align: center; /* Center text horizontally */
+    padding: 40px 0; /* Add padding to the top and bottom */
+    color: #fff; /* Text color */
+    margin: 200px auto 0; /* Margin for centering the container vertically */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8); /* Box shadow for a subtle lift */
+}
+
+/* Styles for the stopwatch heading */
+.stopwatch h1 {
+    margin-top: 60px; /* Top margin for spacing from the top of the container */
+    font-size: 64px; /* Font size */
+    font-weight: 300; /* Font weight (light) */
+}
+
+/* Styles for the buttons container */
+.buttons {
+    display: flex; /* Display buttons in a flex container */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Styles for the buttons (images) */
+.buttons img {
+    width: 50px; /* Set button image width */
+    margin: 0 20px; /* Add horizontal spacing between buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Special styling for the second button image */
+.buttons img:nth-child(2) {
+    width: 80px; /* Increase width for the second button */
+}
