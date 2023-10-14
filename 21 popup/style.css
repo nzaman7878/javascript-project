@@ -1,0 +1,83 @@
+/* Reset CSS and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Styling for the container */
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #34495e; /* Changed background color to a dark blue-gray */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the button */
+.btn {
+    padding: 10px 60px;
+    background: #e74c3c; /* Changed background color to a red */
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    color: #fff; /* Changed text color to white */
+}
+
+/* Styling for the popup container */
+.popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%; /* Changed top position to center vertically */
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+/* Styling for the open popup state */
+.open-popup {
+    visibility: visible; /* Changed visibility to visible */
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1); /* Changed scale to 1 for normal size */
+}
+
+/* Styling for the popup image */
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the popup title */
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+/* Styling for the popup button */
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #3498db; /* Changed background color to a blue */
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
